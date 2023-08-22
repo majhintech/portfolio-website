@@ -9,7 +9,7 @@
 
         <link rel="icon" href="/favicon.ico">
         <!-- custom styles -->
-        <link rel="stylesheet" href="/Styles/style.css">
+        <link rel="stylesheet" href="/Assets/Styles/style.css">
 
         <!-- scripts  -->
         <script src="Scripts/app.js" defer></script>
@@ -19,20 +19,36 @@
         <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
 
     </head>
-    <body class="body">
-        <header>
-            <div class="container">
-                <nav class="primary-nav">
-                    <ul role="list" class="nav-list">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="./Pages/about.html">About</a></li>
-                        <li><a href="./Pages/project">Project</a></li>
-                        <li><a href="./Pages/competency">Competency</a></li>
-                        <li><a href="./Pages/articles">Articles</a></li>
-                        <li><a href="./Pages/contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+    <body class="body light-theme">
+        <header class="header mobile-menu">
+
+          <nav class="navbar container">
+
+            <a href="./index.html"><h2 class="logo">MAJHINpl</h2></a>
+
+              <div class="menu">
+                <ul class="list">
+                  <li class="list-item"><a class="list-link current" href="./index.html">Home</a></li>
+                  <li class="list-item"><a class="list-link" href="./Pages/about.html">About</a></li>
+                  <li class="list-item"><a class="list-link" href="./Pages/project">Project</a></li>
+                  <li class="list-item"><a class="list-link" href="./Pages/competency">Competency</a></li>
+                  <li class="list-item"><a class="list-link" href="./Pages/articles">Articles</a></li>
+                  <li class="list-item"><a class="list-link" href="./Pages/contact">Contact</a></li>
+                </ul>
+              </div>
+              
+              <div class="list list-right">
+                <button class="btn place-item-center" id="theme-toggle-btn">
+                  <i class="ri-sun-line sun-icon"></i>
+                  <i class="ri-moon-line moon-icon"></i>
+                </button>
+
+                <button class="btn place-item-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
+                  <i class="ri-menu-3-line open-menu-icon"></i>
+                  <i class="ri-close-line close-menu-icon"></i>
+                </button>
+              </div>
+          </nav>
         </header>
 
         <!-- Home Areas  -->
@@ -59,125 +75,6 @@
                 src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiR_fg_LZyckpmd4jUMWZu8amTUiDSM4RcD82pH8A_tKxpz7sOgCw3gDCxYSdUlE3CRE1OInW-VzlPK52gZtktAnfTTZOdWyA8ztS4AAF5RBUtWS-No9Tugvt2TsV1Ux5Bby6cwdH_H7AmVdwpyzlqSW6JYR_H_T8PCzDo16VwheW6hplPgF-yGOL-GEw/s1600/Photo.png" alt="profile photo">
                 
             </section>
-
-            <!-- about  -->
-            <section id="about">
-                <div class="container">
-                    <h2 class="sectionHeading">About Me</h2>                    
-                    <p class="section-paragraph">
-                        Hi there! My name is Nepal. since Year 2015 Professionally working as a Project coordinator,
-                        Maintenance planner in the field of Protective coating and Thermal Insulation
-                        Maintenance Services projects in Saudi Arabia.
-                    </p>
-                </div>
-            </section>
-
-            <!-- Competency  -->
-            <section id="competency">                
-                <div class="container">
-                    <header class="competency__header">
-                        <h2 class="sectionHeading">Competency</h2>
-                    </header>
-                    <div class="stacks-background ">
-                        <div class="section__text">
-                            <p class="section__subtitle">My Stacks</p>
-                            <h3>7 Years+ working experience.</h3>
-                            <p>Operational knowlage in:</p>
-                        </div>
-                        <div class="stacks-images__style">
-                            <div class="competency__imges-list">
-                                <div class="competency__imges-list--overlay">
-                                    <img class="competency__imges" src="./Assets/Images/SAP-PM-logo-300x169.webp" alt="Plant maintenance SAP logo">
-                                    <div class="overlay">
-                                        <div class="overlay-text">
-                                            <p>7 Years+ Working experience with SAP PM</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="competency__imges-list">
-                                <div class="competency__imges-list--overlay">
-                                    <img class="competency__imges" src="./Assets/Images/oracle_eppm_grafik-38605036.webp" alt="Primavera p6 EPPM logo">
-                                    <div class="overlay">
-                                        <div class="overlay-text">
-                                            <p>Certificationa and working experience.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="competency__imges-list">
-                                <div class="competency__imges-list--overlay">
-                                    <img class="competency__imges" src="./Assets/Images/Microsoft-Power-BI-Symbol.png" alt="MS Power BI logo">
-                                    <div class="overlay">
-                                        <div class="overlay-text">
-                                            <p>Many Report prepared with Power BI.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="competency__imges-list">
-                                <div class="competency__imges-list--overlay">
-                                    <img class="competency__imges" src="./Assets/Images/MS-Offices.jpeg" alt="MS Offices products logo">
-                                    <div class="overlay">
-                                        <div class="overlay-text">
-                                            <p>10+ Year's of working experience with these stacks.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                                           
-                    </div>
-                </div>
-            </section>
-
-            <!-- Projects  -->
-            <section id="project">
-                <div class="container">
-                    <header>
-                        <h1 class="sectionHeading">Project</h1>
-                    </header>
-                    <div class="project-container project-container-wrap">
-                        <heading>
-                            <h2 class="section__title highlight">Insulation &amp; Painting Maintenance Services</h2>
-                            <p class="highlight">Company: Binzagr Factory for insulation materials co. ltd.</p>
-                            <span class="highlight">(Al Jubail, Saudi Arabia)</span>
-                        </heading>
-                        <p class="highlight">
-                            Period: <strong>2015 to till the time</strong>
-                        </p>
-                        <br>
-                        <div class="project-details">
-                            <h3 class="highlight">Companies Overview</h3>
-                            <p class="highlight">
-                                sales and services of refractory, scaffolding, maintenance, calibration, coating, painting & surface protection.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Contact Section -->
-            <section id="contact">
-                <div class="container-fluid" id="contact">
-                    <div class="container">
-                        <div class="col-md-12 contact-me">
-                            <h3 class="card-title wow slideInUp">Let's Talk</h3>
-                            <p class="title wow fadeIn">I will be Happy to hear from you.</p>
-                            <form  method="POST" action="https://formspree.io/f/xjvdlrqa">
-                                <div class="col-md-6 left"style="padding-left: 0px;">
-                                <input type="text" required="true" id="name"  class="wow fadeIn" name="name" placeholder="Your name.." style="width:49%; float:left;">
-                                <input type="email" required="true" id="email"  class="wow fadeIn" name="email" placeholder="Your email.." style="width:49%; float:left; margin-left:2%;">
-                                <input type="text" required="true" id="subject"  class="wow fadeIn" name="subject" placeholder="Subject..">
-                                    <div class="col-md-6 right"style="padding-right: 0px;">
-                                    <textarea id="messeges" required="true" class="wow fadeIn" name="messeges" placeholder="Your Messege.." style="height:92px"></textarea>
-                                </div>
-                                <input type="submit"  class="wow fadeIn" value="Send">
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
         </main> 
             <footer class="footer">
                 <div class="container">
