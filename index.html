@@ -12,22 +12,24 @@
       <link rel="stylesheet" href="/Assets/Styles/style.css">
 
       <!-- scripts  -->
-      <script src="Scripts/app.js" defer></script>
+      <script src="Scripts/main.js" defer></script>
 
       <!-- fonts and icon  -->
       <script src="https://kit.fontawesome.com/7ca13739d4.js" crossorigin="anonymous"></script>
       <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
 
   </head>
-  <body class="body light-theme">
-    <header class="header js-header">
+  <body class="body">
+    <header class="header js-header" id="header">
 
       <nav class="navbar container">
 
-        <a href="./index.html"><h2 class="logo">MAJHINpl</h2></a>
+        <a href="./index.html"><h2 class="logo">&lt;/majhiNpl&gt;</h2></a>
 
-          <div class="menu">
-            <ul class="list">
+        <a class="list-link showcase-nav" href="./Pages/project">Projects</a>
+
+          <div class="menu js-menu" id="menu">
+            <ul class="list js-list">
               <li class="list-item"><a class="list-link current" href="./index.html">Home</a></li>
               <li class="list-item"><a class="list-link" href="./Pages/about.html">About</a></li>
               <li class="list-item"><a class="list-link" href="./Pages/project">Project</a></li>
@@ -52,7 +54,17 @@
     </header>
 
     <!-- Home Areas  -->
-    <main id="main-content">
+    <main class="main-contents">
+
+      <div class="feature js-mobile-feature">   
+
+        <h2 class="feature-heading">
+          I Design and develop the user interface (UI) and Create tools that improve site interaction regardless of the browser.
+          <span>front-end web developer</span>
+        </h2>
+
+      </div>
+
         <section id="home" class="hero container">                
             <div class="hero__title">
                 <h1>
