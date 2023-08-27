@@ -46,6 +46,9 @@ body {
   background-color: var(--primary-bg-clr);  
   letter-spacing: 1px; 
   transition: background-color 0.25s, color 0.25s;
+  margin: 0 auto;
+  width: 95%;
+  max-width: 960px;
 }
 
 a {  
@@ -139,8 +142,81 @@ body.light-theme {
   background-image: url(/Assets/Images/feature-img.jpg);
   height: 80vh;
   width: 100%;
-  background-size: right;
+  background-size: cover;
+  color: var(--light-color);
+  background-repeat: no-repeat;  
+  /* display: flex;  
+  align-items: center;
+  justify-content: center; */
 }
+
+.feature-heading {
+  padding-top: 12rem;
+  line-height: 1.3;
+}
+
+.feature-caption {
+  display: block;
+  font-size: var(--font-size-sm);
+  font-weight: 300;
+  text-decoration: underline;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+@media screen and (min-width: 768px) {
+
+  .feature {
+    background-image: url(/Assets/Images/feature-img-lg-screen.jpg);
+    background-size: cover;
+  }
+  
+}
+
+.CTA-btn {
+  border-radius: 0.8em;
+  color: var(--light-color);
+  background-color: var(--light-color-alt);
+  padding: 0.5em;
+}
+
+.highlight-project {
+  margin-top: 2em;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 0.6em;
+}
+
+.tag {
+  display: inline;
+  text-decoration: underline;
+  
+}
+
+.sample-project-hightlight {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-rows: min-content(100px, 1fr);
+  gap: 10px;  
+  margin-top: 2em;  
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.sample-project {  
+  border: 2px solid cyan;
+  background-size: cover;
+}
+
+.sample-project-heading {
+  text-align: center;
+  padding: 0.5em;
+  background-color: #44ce7b;
+  border-radius: 0.8em;
+  padding: 0.6em;
+}
+
+
 
 .navbar {
   display: flex;
