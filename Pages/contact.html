@@ -1,37 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact</title>
-</head>
-<body>
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="Nepal Majhi">
+      <title>MAJHINpl</title>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="container-fluid" id="contact">
-        <div class="container">
-            <div class="col-md-12 contact-me">
-                <h3 class="card-title wow slideInUp">Let's Talk</h3>
-                <p class="title wow fadeIn">I will be Happy to hear from you.</p>
-                <form  method="POST" action="https://formspree.io/f/xjvdlrqa">
-                    
-                    <caption>
-                        Contacts Form
-                    </caption>
-                    <div class="col-md-6 left"style="padding-left: 0px;">
-                    <input type="text" required="true" id="name"  class="wow fadeIn" name="name" placeholder="Your name.." style="width:49%; float:left;">
-                    <input type="email" required="true" id="email"  class="wow fadeIn" name="email" placeholder="Your email.." style="width:49%; float:left; margin-left:2%;">
-                    <input type="text" required="true" id="subject"  class="wow fadeIn" name="subject" placeholder="Subject..">
-                        <div class="col-md-6 right"style="padding-right: 0px;">
-                        <textarea id="messeges" required="true" class="wow fadeIn" name="messeges" placeholder="Your Messege.." style="height:92px"></textarea>
-                    </div>
-                    <input type="submit"  class="wow fadeIn" value="Send">
-                </form>
-            </div>
+      <link rel="icon" href="/favicon.ico">
+      <!-- custom styles -->
+      <link rel="stylesheet" href="/Assets/Styles/style.css">
+
+      <!-- scripts  -->
+      <script src="/Scripts/main.js" defer></script>
+
+      <!-- fonts and icon  -->
+      <script src="https://kit.fontawesome.com/7ca13739d4.js" crossorigin="anonymous"></script>
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+
+  </head>
+  <body class="body">
+    <header class="header js-header" id="header">
+
+      <nav class="navbar container">
+
+        <a href="./index.html"><img class="logo" src="/Assets/Images/profile-web-logo.png" alt="web logo" width="150"></a>
+
+        <a class="list-link showcase-nav" href="./Pages/project">Projects</a>
+
+          <div class="menu js-menu" id="menu">
+            <ul class="list js-list">
+              <li class="list-item"><a class="list-link current" href="./index.html">Home</a></li>
+              <li class="list-item"><a class="list-link" href="../Pages/about-us.html">About</a></li>
+              <li class="list-item"><a class="list-link" href="./Pages/project.html">Project</a></li>
+              <li class="list-item"><a class="list-link" href="./Pages/competency.html">Competency</a></li>
+              <li class="list-item"><a class="list-link" href="./Pages/articles.html">Articles</a></li>
+              <li class="list-item"><a class="list-link" href="./Pages/contact.html">Contact</a></li>
+            </ul>
+          </div>
+          
+          <div class="list list-right">
+            <button class="btn place-item-center" id="theme-toggle-btn">
+              <i class="ri-sun-line sun-icon"></i>
+              <i class="ri-moon-line moon-icon"></i>
+            </button>
+
+            <button class="btn place-item-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
+              <i class="ri-menu-3-line open-menu-icon"></i>
+              <i class="ri-close-line close-menu-icon"></i>
+            </button>
+          </div>
+      </nav>
+    </header>
+
+    <section class="form-body">
+      <div class="contact-msg">
+        <h3>Hi there, &#x1F44B; <br> we love to here from You. please send your message from below forms!</h3>
+      </div>
+      <div class="brand-highlight-contact">
+        <li><img src="/Assets/Images/brand-highlight.png" width="300" alt="brand highlight"></li>
+      </div>
+      <form action="https://formspree.io/f/xjvdlrqa" method="post" class="contact-form">
+        <ul class="form-input-list">
+          <li class="form-input-list-item">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="user-name" placeholder="Enter Your Name" required>
+          </li>
+          <li class="form-input-list-item">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="user-email" value="email" placeholder="Enter Your Email address" required>
+          </li>
+          <li class="form-input-list-item">
+            <label for="msg">Messages</label>
+            <textarea type="text" id="msg" name="user-msg"  required></textarea>
+          </li>
+          <li>
+            <button class="btn" type="submit" class="btn-submit"><i class="ri-send-plane-fill"></i> Send</button>
+          </li>
+        </ul>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-list primary-footer">             
+        <!-- <p>majhiNpl</p>    -->
+        <div class="brand-highlight">
+          <p>Web Development, Cybersecurity</p>
+          <a href="https://www.linkedin.com/in/majhinpl/" class="social-link">
+            <i class="ri-linkedin-fill"></i>
+          </a>            
+          <a href="https://www.instagram.com/majhineps/" class="social-link">
+            <i class="ri-instagram-line"></i>
+          </a>
+          <a href="https://www.facebook.com/MAJHINpl/" class="social-link">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a href="https://github.com/majhintech" class="social-link">
+            <i class="ri-github-fill"></i>
+          </a>
         </div>
-    </div>
-</section>
-  
-</body>
+        <div class="about-brand">
+          <li><a href="./about.html" class="brand-link">About</a></li>
+          <li><a href="./articles.html" class="brand-link">Blogs</a></li>
+        </div>
+      </div>
+      <hr>
+      <div class="footer-list">
+        <ul class="secondary-footer-first">
+          <li class="secondary-footer-logo">
+            <a href="./pages/homepage"><h2>majhiNpl</h2></a>
+          </li>
+          <li><a href="./pages/privacy-policy">Website Privacy Notice</a></li>
+          <li><a href="./pages/terms-of-services">Terms of Service</a></li>
+          <li><a href="./Pages/about-us.html"></a></li>
+        </ul>
+        <div class="copyright-note">
+
+          <li><small>&copy; 2023 MAJHINpl. All Rights Reserved.</small>
+          Made with &#10084;&#65039;. by <a class="copyrights__link" target="_blank" href="#">majhiNpl</a>.</small></li>
+        </div>
+    </footer>
+  </body>
 </html>
